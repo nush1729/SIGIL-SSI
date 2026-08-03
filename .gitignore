@@ -19,3 +19,4 @@ packages/web/.env*
 
 # paper drafts (not part of the code repo)
 /paper/
+**/.next/
