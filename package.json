@@ -1,0 +1,12 @@
+{
+  "name": "sigil",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sigil monorepo — self-sovereign identity: Solidity contracts + Next.js frontend",
+  "scripts": {
+    "contracts:compile": "pnpm --filter sigil-contracts run compile",
+    "contracts:test": "pnpm --filter sigil-contracts run test",
+    "web:dev": "pnpm --filter sigil-web run dev",
+    "web:build": "pnpm --filter sigil-web run build"
+  }
+}

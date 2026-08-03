@@ -1,0 +1,21 @@
+node_modules/
+.DS_Store
+*.log
+
+# hardhat
+packages/contracts/cache/
+packages/contracts/artifacts/
+packages/contracts/typechain-types/
+packages/contracts/.env
+
+# next.js
+packages/web/.next/
+packages/web/out/
+packages/web/.env*
+!packages/web/.env.example
+
+# original source zips (kept outside repo tracking)
+*.zip
+
+# paper drafts (not part of the code repo)
+/paper/

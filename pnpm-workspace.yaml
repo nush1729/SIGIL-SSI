@@ -1,0 +1,16 @@
+packages:
+  - "packages/*"
+overrides:
+  # cuer (RainbowKit's QR-code sub-dependency) calls qr({ border: 0 }), but
+  # qr@0.6.0 made border<=0 throw ("invalid border=0") where older versions
+  # allowed it. Pin to the last compatible release until cuer/qr fix this
+  # upstream.
+  qr: "0.5.5"
+allowBuilds:
+  blake-hash: true
+  bufferutil: true
+  keccak: true
+  secp256k1: true
+  sharp: true
+  unrs-resolver: true
+  utf-8-validate: true

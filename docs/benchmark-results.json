@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "network": "hardhat",
+    "timestamp": "2026-08-03T02:47:37.627Z",
+    "solidity": "0.8.20"
+  },
+  "gas": {
+    "issueCredential": 172693,
+    "issueBatchCredential": 175560,
+    "revokeCredential": 39649,
+    "registerSchema": 262330,
+    "setAgeCommitment": 105966,
+    "createClaimRequest": 261569,
+    "fulfillClaimRequest": 47772,
+    "createAttestation": 145962,
+    "identityDeploy_3guardians": 2868623,
+    "linkCredential": 112937,
+    "addGuardian": 82382,
+    "removeGuardian": 50489,
+    "proposeRecovery": 69405,
+    "voteRecovery_firstVote": 74954,
+    "voteRecovery_finalVote_reachesThreshold": 81971,
+    "finalizeRecovery": 53118,
+    "cancelRecovery": 47037,
+    "executeForwardedCall": 58481,
+    "submitAgeProof_onChainVerify": 399451
+  },
+  "batching": [
+    {
+      "credentialsPerBatch": 1,
+      "individualIssuanceTotalGas": 172705,
+      "individualIssuanceGasPerCredential": 172705,
+      "batchIssuanceGas": 175572,
+      "batchIssuanceGasPerCredential": 175572,
+      "amortizationFactor": 0.98
+    },
+    {
+      "credentialsPerBatch": 5,
+      "individualIssuanceTotalGas": 778025,
+      "individualIssuanceGasPerCredential": 155605,
+      "batchIssuanceGas": 175572,
+      "batchIssuanceGasPerCredential": 35114,
+      "amortizationFactor": 4.43
+    },
+    {
+      "credentialsPerBatch": 10,
+      "individualIssuanceTotalGas": 1556026,
+      "individualIssuanceGasPerCredential": 155603,
+      "batchIssuanceGas": 175572,
+      "batchIssuanceGasPerCredential": 17557,
+      "amortizationFactor": 8.86
+    },
+    {
+      "credentialsPerBatch": 25,
+      "individualIssuanceTotalGas": 3890101,
+      "individualIssuanceGasPerCredential": 155604,
+      "batchIssuanceGas": 175572,
+      "batchIssuanceGasPerCredential": 7023,
+      "amortizationFactor": 22.16
+    },
+    {
+      "credentialsPerBatch": 50,
+      "individualIssuanceTotalGas": 7780202,
+      "individualIssuanceGasPerCredential": 155604,
+      "batchIssuanceGas": 175560,
+      "batchIssuanceGasPerCredential": 3511,
+      "amortizationFactor": 44.32
+    }
+  ],
+  "zk": {
+    "runs": 5,
+    "samples": [
+      {
+        "proveMs": 900.8,
+        "verifyMs": 11.3,
+        "offChainVerifyOk": true
+      },
+      {
+        "proveMs": 101.7,
+        "verifyMs": 9.9,
+        "offChainVerifyOk": true
+      },
+      {
+        "proveMs": 93.7,
+        "verifyMs": 9.7,
+        "offChainVerifyOk": true
+      },
+      {
+        "proveMs": 94.6,
+        "verifyMs": 9.2,
+        "offChainVerifyOk": true
+      },
+      {
+        "proveMs": 91.3,
+        "verifyMs": 10.1,
+        "offChainVerifyOk": true
+      }
+    ],
+    "avgProveMs": 256.4,
+    "avgVerifyMs": 10,
+    "onChainVerifyGas": 399451
+  }
+}
