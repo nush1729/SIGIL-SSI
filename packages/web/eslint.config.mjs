@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vendored / third-party assets (e.g. the pre-built snarkjs IIFE bundle
+    // used for client-side ZK proof generation) should not be linted.
+    "public/**",
   ]),
 ]);
 
